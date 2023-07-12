@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./styles.css";
 import MainLayout from "./layout/MainLayout";
-import { Food, FormPage, Home, NotFound, Product, SearchPage } from "./pages";
+import { Food, FormPage, Home, NotFound, Product, Register, SearchPage } from "./pages";
 import { FilterProvider } from "./context/FilterContext";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
           <Route path="home" element={<Home />} />
           <Route path="product" element={<Food />} />
           <Route path="product/:id" element={<Product />} />
+          <Route path="register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

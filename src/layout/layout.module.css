@@ -8,6 +8,11 @@
 .header {
   grid-area: header;
   background-color: var(--primary);
+
+  display: flex;
+  gap: 20px;
+
+  padding: 10px;
 }
 
 .body {
@@ -17,6 +22,8 @@
 .footer {
   grid-area: footer;
   background-color: var(--primary);
+
+  padding: 10px;
 }
 
 @media (width <= 992px) {
